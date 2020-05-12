@@ -10,7 +10,9 @@ from libc.stdlib cimport malloc, free
 
 
 cdef class ModelBase:  
-    pass
+    
+    def __call__(double x, double mu):
+        return 0.
      
 
 cdef double logistic(double x, double mu) nogil:
